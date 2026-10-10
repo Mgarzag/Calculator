@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Calculator.css';
 
 function Calculator() {
     const [input, setInput] = useState("");
 
     // Append numbers and operators to the screen
-  const handleClick = (value) => {
+  const handleClick = (value: string) => {
     setInput((prev) => prev + value);
   };
 
